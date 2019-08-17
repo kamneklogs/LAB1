@@ -1,12 +1,12 @@
 package model;
-import java.lang.Math;
+
 public class BasicOps {
-    public BasicOps(){
-     
+
+    public BasicOps() {
     }
 
-    public double sum(double num1, double num2){
-        return num1 +num2;
+    public void sum(double num1, double num2) {
+        System.out.println("El resultado es: " + (num1 + num2));
     }
 
 }
