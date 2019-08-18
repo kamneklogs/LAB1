@@ -10,9 +10,13 @@ public class Calculator {
   static double num1, num2;
   static Scanner r = new Scanner(System.in);
   private BasicOps bOps;
+  private MediumOps mOps;
+  private TrigoOps tOps;
 
   public Calculator() {
     bOps = new BasicOps();
+    mOps = new MediumOps();
+    tOps = new TrigoOps();
   }
 
   public static void main(String[] args) {
@@ -37,14 +41,38 @@ public class Calculator {
         break;
 
       case 2:
-      System.out.println("Ingrese el primer numero: ");
-      num1 = r.nextDouble();
-      System.out.println("Ingrese el segundo numero: ");
-      num2 = r.nextDouble();
-      m.bOps.subt(num1, num2);
-      break;
+        System.out.println("Ingrese el primer numero: ");
+        num1 = r.nextDouble();
+        System.out.println("Ingrese el segundo numero: ");
+        num2 = r.nextDouble();
+        m.bOps.subt(num1, num2);
+        break;
+
+      case 3:
+        System.out.println("Ingrese el numerador: ");
+        num1 = r.nextDouble();
+        System.out.println("Ingrese el denominador: ");
+        num2 = r.nextDouble();
+        m.bOps.div(num1, num2);
+        break;
+
+      case 4:
+        System.out.println("Ingrese el primer factor: ");
+        num1 = r.nextDouble();
+        System.out.println("Ingrese el segundo factor: ");
+        num2 = r.nextDouble();
+        m.bOps.multi(num1, num2);
+        break;
+
+      case 5:
+        System.out.println("Ingrese el numerador: ");
+        num1 = r.nextDouble();
+        System.out.println("Ingrese el denominador: ");
+        num2 = r.nextDouble();
+        m.bOps.mod(num1, num2);
+        break;
       }
-      
+
     } while (optMenu == 0);
   }
 
