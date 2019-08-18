@@ -35,7 +35,16 @@ public class Calculator {
         num2 = r.nextDouble();
         m.bOps.sum(num1, num2);
         break;
+
+      case 2:
+      System.out.println("Ingrese el primer numero: ");
+      num1 = r.nextDouble();
+      System.out.println("Ingrese el segundo numero: ");
+      num2 = r.nextDouble();
+      m.bOps.subt(num1, num2);
+      break;
       }
+      
     } while (optMenu == 0);
   }
 
