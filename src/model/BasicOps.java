@@ -1,6 +1,11 @@
 package model;
+import java.util.Scanner;
 
 public class BasicOps {
+
+    double num1;
+    double num2;
+    Scanner r = new Scanner(System.in);
 
     public BasicOps() {
     }
@@ -14,7 +19,11 @@ public class BasicOps {
      * @throws Exception I don't know
      */
 
-    public void sum(double num1, double num2) {
+    public void sum() {
+        System.out.println("Ingrese el primer numero: ");
+        num1 = r.nextDouble();
+        System.out.println("Ingrese el segundo numero: ");
+        num2 = r.nextDouble();
         System.out.println("El resultado es: " + (num1 + num2));
     }
 

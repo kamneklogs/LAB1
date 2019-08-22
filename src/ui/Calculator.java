@@ -33,11 +33,7 @@ public class Calculator {
       opt = r.nextInt();
       switch (opt) {
       case 1:
-        System.out.println("Ingrese el primer numero: ");
-        num1 = r.nextDouble();
-        System.out.println("Ingrese el segundo numero: ");
-        num2 = r.nextDouble();
-        m.bOps.sum(num1, num2);
+        m.bOps.sum();
         break;
 
       case 2:
