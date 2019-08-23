@@ -37,35 +37,19 @@ public class Calculator {
         break;
 
       case 2:
-        System.out.println("Ingrese el primer numero: ");
-        num1 = r.nextDouble();
-        System.out.println("Ingrese el segundo numero: ");
-        num2 = r.nextDouble();
-        m.bOps.subt(num1, num2);
+        m.bOps.subt();
         break;
 
       case 3:
-        System.out.println("Ingrese el numerador: ");
-        num1 = r.nextDouble();
-        System.out.println("Ingrese el denominador: ");
-        num2 = r.nextDouble();
-        m.bOps.div(num1, num2);
+        m.bOps.div();
         break;
 
       case 4:
-        System.out.println("Ingrese el primer factor: ");
-        num1 = r.nextDouble();
-        System.out.println("Ingrese el segundo factor: ");
-        num2 = r.nextDouble();
-        m.bOps.multi(num1, num2);
+        m.bOps.multi();
         break;
 
       case 5:
-        System.out.println("Ingrese el numerador: ");
-        num1 = r.nextDouble();
-        System.out.println("Ingrese el denominador: ");
-        num2 = r.nextDouble();
-        m.bOps.mod(num1, num2);
+        m.bOps.mod();
         break;
       }
 

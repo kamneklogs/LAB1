@@ -27,19 +27,35 @@ public class BasicOps {
         System.out.println("El resultado es: " + (num1 + num2));
     }
 
-    public void subt(double num1, double num2) {
+    public void subt() {
+        System.out.println("Ingrese el primer numero: ");
+        num1 = r.nextDouble();
+        System.out.println("Ingrese el segundo numero: ");
+        num2 = r.nextDouble();
         System.out.println("El resultado de la resta es: " + (num1 - num2));
     }
 
-    public void div(double num1, double num2) {
+    public void div() {
+        System.out.println("Ingrese el numerador: ");
+        num1 = r.nextDouble();
+        System.out.println("Ingrese el denominador: ");
+        num2 = r.nextDouble();
         System.out.println("El resultado de la division es: " + (num1 / num2));
     }
 
-    public void multi(double num1, double num2) {
+    public void multi() {
+        System.out.println("Ingrese el primer factor: ");
+        num1 = r.nextDouble();
+        System.out.println("Ingrese el segundo factor: ");
+        num2 = r.nextDouble();
         System.out.println("El resultado de la multipplicacion es: " + (num1 * num2));
     }
 
-    public void mod(double num1, double num2) {
+    public void mod() {
+        System.out.println("Ingrese el numerador: ");
+        num1 = r.nextDouble();
+        System.out.println("Ingrese el denominador: ");
+        num2 = r.nextDouble();
         System.out.println("El modulo es: " + (num1 % num2));
     }
 
