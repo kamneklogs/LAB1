@@ -71,6 +71,7 @@ public class Calculator {
       opt = r.nextInt();
     } while (opt == 1);
 
+    System.out.println("Created by Cristhian Camilo Gutierrez Cordoba\nInfo and cheaps services : kamneklogs@gmail.com :3");
   }
 
 }
