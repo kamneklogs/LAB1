@@ -6,4 +6,8 @@ public class TrigoOps{
 
     }
 
+    public void sin(double a, boolean g){
+
+    }
+
 }
