@@ -64,7 +64,11 @@ public class Calculator {
           break;
 
         case 7:
-            
+          m.tOps.cos();
+          break;
+
+        case 8:
+          m.tOps.tan();
           break;
 
         }

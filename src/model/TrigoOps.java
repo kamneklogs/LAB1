@@ -1,5 +1,6 @@
 package model;
 
+import java.lang.StrictMath;
 import java.util.Scanner;
 
 public class TrigoOps {
