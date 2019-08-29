@@ -85,7 +85,7 @@ public class TrigoOps {
                 break;
 
             case 3:
-                System.out.println("(Seno = Raiz cuadrada de 2)/2");
+                var = 0.707106;
                 break;
 
             case 4:
@@ -113,7 +113,7 @@ public class TrigoOps {
         
        
 
-
+        return var;
 
     }
 
