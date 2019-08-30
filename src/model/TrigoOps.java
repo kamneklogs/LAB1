@@ -35,7 +35,7 @@ public class TrigoOps {
             break;
 
         case 2:
-            var = 1/2;
+            var = 1.5;
             break;
 
         case 3:

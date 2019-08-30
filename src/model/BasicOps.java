@@ -26,24 +26,22 @@ public class BasicOps {
         return num1 - num2;
     }
 
-    public double div(double num1, double num2)throws ArithmeticException {
-        try {
+    public double div(double num1, double num2) {
+        
             return num1 / num2;
-        } catch (ArithmeticException e) {
-            System.err.println("ERROR DEMONIACO\n  Detalles: " + e + " NO SE PUEDE DIVIDIR POR CERO");
-        }
+        
     }
 
     public double multi(double num1, double num2) {
         return num1 * num2;
     }
 
-    public double mod(double num1, num2)throws ArithmeticException {
-        try {
+    public double mod(double num1, double num2) {
+        
             return num1 % num2;
-        } catch (ArithmeticException e) {
-            System.err.println("ERROR DEMONIACO\n  Detalles: " + e + " NO SE PUEDE DIVIDIR POR CERO");
-        };
+      
+
+
     }
 
 }

@@ -9,7 +9,7 @@ public class Calculator {
   static int opt;
   static double num1, num2;
   static boolean b;
-  static Scanner r = new Scanner(System.in);
+  static Scanner r;
   private BasicOps bOps;
   private MediumOps mOps;
   private TrigoOps tOps;
@@ -18,6 +18,7 @@ public class Calculator {
     bOps = new BasicOps();
     mOps = new MediumOps();
     tOps = new TrigoOps();
+    r = new Scanner(System.in);
   }
 
   public static void main(String[] args) {
@@ -40,35 +41,91 @@ public class Calculator {
         switch (opt) {
 
         case 1:
-          m.bOps.sum();
+          System.out.print("Num1 = ");
+          num1 = r.nextDouble();
+          System.out.print("Num2 =");
+          num2 = r.nextDouble();
+          System.out.println(m.bOps.sum(num1, num2));
           break;
 
         case 2:
-          m.bOps.subt();
+          System.out.print("Num1 = ");
+          num1 = r.nextDouble();
+          System.out.print("Num2 =");
+          num2 = r.nextDouble();
+          System.out.println(m.bOps.subt(num1, num2));
           break;
 
         case 3:
-          m.bOps.div();
+          System.out.print("Num1 = ");
+          num1 = r.nextDouble();
+          System.out.print("Num2 =");
+          num2 = r.nextDouble();
+          System.out.println(m.bOps.div(num1, num2));
           break;
 
         case 4:
-          m.bOps.multi();
+          System.out.print("Num1 = ");
+          num1 = r.nextDouble();
+          System.out.print("Num2 =");
+          num2 = r.nextDouble();
+          System.out.println(m.bOps.multi(num1, num2));
           break;
 
         case 5:
-          m.bOps.mod();
+          System.out.print("Num1 = ");
+          num1 = r.nextDouble();
+          System.out.print("Num2 =");
+          num2 = r.nextDouble();
+          System.out.println(m.bOps.mod(num1, num2));
           break;
 
         case 6:
-          m.tOps.sin();
+          System.out.println(m.tOps.sin());
           break;
 
         case 7:
-          m.tOps.cos();
+          System.out.println(m.tOps.cos());
           break;
 
         case 8:
-          m.tOps.tan();
+          System.out.println(m.tOps.tan());
+          break;
+
+        case 9:
+          System.out.println("Ingrese la base");
+          num1 = r.nextDouble();
+          System.out.println("Ingrese el argumento");
+          num2 = r.nextDouble();
+          System.out.println("El resultado es: " + m.mOps.log(num1, num2));
+          break;
+
+        case 10:
+          System.out.print("Num = ");
+          num1 = r.nextDouble();
+          System.out.println(m.mOps.sqrt(num1));
+          break;
+
+        case 11:
+          System.out.println("Ingrese el radical: ");
+          num1 = r.nextDouble();
+          System.out.println("Ingrese el radicando: ");
+          num2 = r.nextDouble();
+          System.out.println(m.mOps.nroot(num1, num2));
+          break;
+
+        case 12:
+          System.out.println("Ingrese la base: ");
+          num1 = r.nextDouble();
+          System.out.println("Ingrese el exponente: ");
+          num2 = r.nextDouble();
+          System.out.println(m.mOps.pow(num1, num2));
+          break;
+
+        case 13:
+          System.out.println("Ingrese el exponente:");
+          num2 = r.nextDouble();
+          System.out.println(m.mOps.pow(10, num2));
           break;
 
         }
@@ -78,7 +135,8 @@ public class Calculator {
       opt = r.nextInt();
     } while (opt == 1);
 
-    System.out.println("Created by Cristhian Camilo Gutierrez Cordoba\nInfo and cheaps services : kamneklogs@gmail.com :3");
+    System.out
+        .println("Created by Cristhian Camilo Gutierrez Cordoba\nInfo and cheaps services : kamneklogs@gmail.com :3");
   }
 
 }
