@@ -168,4 +168,17 @@ public class TrigoOps {
         
     }
 
+    public double toDegrees(double num1){
+
+        return num1*(180/StrictMath.PI);
+    }
+
+    public double toRadians(double num1){
+
+        return num1*(StrictMath.PI/180);
+
+    }
+
+    
+
 }

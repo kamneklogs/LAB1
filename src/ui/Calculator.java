@@ -5,11 +5,12 @@ import java.util.Scanner;
 
 public class Calculator {
 
-  private static final String LISTOPS = "Opciones:\n\n1. Suma\n2. Resta.\n3. Division.\n4. Multiplicacion.\n5. Modulo.\n6. Seno.\n7. Coseno.\n8. Tangente.\n9. Logaritmo base 10 y base n.\n10. Raiz cuadrada.\n11. Raiz n-esima.\n12. Potenciacion.\n13. Base 10 de un numero x.\n14. Memoria de los resultados de las ultimas 10 operaciones. (Estos resultados pueden ser usados en la operacion actual del usuario). \n15. El factorial de un numero.\n16. La conversion de grados a radianes y viceversa.\n17. La conversion entre binarios, decimales y hexadecimales.";
-  static int opt;
-  static double num1, num2;
-  static boolean b;
-  static Scanner r;
+  private static final String LISTOPS = "Opciones:\n\n1. Suma\n2. Resta.\n3. Division.\n4. Multiplicacion.\n5. Modulo.\n6. Seno.\n7. Coseno.\n8. Tangente.\n9. Logaritmo base 10 y base n.\n10. Raiz cuadrada.\n11. Raiz n-esima.\n12. Potenciacion.\n13. Base 10 de un numero x.\n14. Memoria de los resultados de las ultimas 10 operaciones. (Estos resultados pueden ser usados en la operacion actual del usuario). \n15. El factorial de un numero.\n16. La conversion de grados a radianes.\n17. La conversion de Radianes a Grados.\n18. La conversion entre binarios, decimales y hexadecimales.\n";
+  private static final String LISTTYP = "1. Decimales.\n2. Hexadecimales.\n3. Binarios ";
+  private static int opt;
+  private static double[] memory = new double[9];
+  private static double num1, num2;
+  private static Scanner r;
   private BasicOps bOps;
   private MediumOps mOps;
   private TrigoOps tOps;
@@ -127,6 +128,32 @@ public class Calculator {
           num2 = r.nextDouble();
           System.out.println(m.mOps.pow(10, num2));
           break;
+
+        case 15:
+          System.out.print("Ingrese el numero: ");
+          num1 = r.nextInt();
+          System.out.println(m.mOps.fact((int)num1));
+          break;
+
+        case 16:
+          System.out.print("Ingrese el numero en grados: ");
+          num1 = r.nextDouble();
+          System.out.println(m.tOps.toRadians(num1));
+          break;
+
+        case 17:
+          System.out.println("Ingrese el numero en radianes");
+          num1 = r.nextDouble();
+          System.out.println(m.tOps.toDegrees(num1));
+          break;
+
+        case  18:
+          System.out.println("Elija el tipo de numero origen:\n");
+          System.out.println(LISTTYP);
+          opt = r.nextInt();
+          
+          break;
+
 
         }
 

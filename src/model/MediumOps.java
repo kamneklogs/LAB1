@@ -45,15 +45,26 @@ public class MediumOps {
     }
 
     public double nroot(double num1, double num2) {
-        
+
         var = Math.pow(num2, 1 / num1);
 
         return var;
-        
+
     }
 
-    public double pow(double num1, double num2){
+    public double pow(double num1, double num2) {
         return Math.pow(num1, num2);
     }
+
+    public int fact(int num1) {
+
+        int res = 1, i;
+        for (i = 2; i <= num1; i++){
+            res *= i;
+        }
+        return res;
+    }
+
+    
 
 }
