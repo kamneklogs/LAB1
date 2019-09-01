@@ -8,8 +8,9 @@ public class Calculator {
   private static final String LISTOPS = "Opciones:\n\n1. Suma\n2. Resta.\n3. Division.\n4. Multiplicacion.\n5. Modulo.\n6. Seno.\n7. Coseno.\n8. Tangente.\n9. Logaritmo base 10 y base n.\n10. Raiz cuadrada.\n11. Raiz n-esima.\n12. Potenciacion.\n13. Base 10 de un numero x.\n14. Memoria de los resultados de las ultimas 10 operaciones. (Estos resultados pueden ser usados en la operacion actual del usuario). \n15. El factorial de un numero.\n16. La conversion de grados a radianes.\n17. La conversion de Radianes a Grados.\n18. La conversion entre binarios, decimales y hexadecimales.\n";
   private static final String LISTTYP = "1. Decimales.\n2. Hexadecimales.\n3. Binarios ";
   private static int opt;
-  private static double[] memory = new double[9];
+  // private static double[] memory = new double[9];
   private static double num1, num2;
+  private static String s;
   private static Scanner r;
   private BasicOps bOps;
   private MediumOps mOps;
@@ -132,7 +133,7 @@ public class Calculator {
         case 15:
           System.out.print("Ingrese el numero: ");
           num1 = r.nextInt();
-          System.out.println(m.mOps.fact((int)num1));
+          System.out.println(m.mOps.fact((int) num1));
           break;
 
         case 16:
@@ -147,13 +148,84 @@ public class Calculator {
           System.out.println(m.tOps.toDegrees(num1));
           break;
 
-        case  18:
-          System.out.println("Elija el tipo de numero origen:\n");
-          System.out.println(LISTTYP);
+        case 18:
+          System.out.println("Elija el tipo de numero origen:\n" + LISTTYP);
           opt = r.nextInt();
-          
-          break;
+          switch (opt) {
+          case 1:
+            System.out.println("Elija el tipo de numero destino:\n" + LISTTYP);
+            opt = r.nextInt();
+            switch (opt) {
+            case 1:
+              System.out.print("Ingrese el numero");
+              num1 = r.nextDouble();
+              System.out.println(num1);
+              break;
 
+            case 2:
+              System.out.print("Ingrese el numero: ");
+              num1 = r.nextDouble();
+              System.out.println(m.mOps.decToBin((int) num1));
+              break;
+
+            case 3:
+              System.out.print("Ingrese el numero: ");
+              num1 = r.nextDouble();
+              System.out.println(m.mOps.decToBin((int) num1));
+              break;
+            }
+            break;
+
+          case 2:
+            System.out.println("Elija el tipo de numero destino:\n" + LISTTYP);
+            opt = r.nextInt();
+            switch (opt) {
+            case 1:
+              System.out.print("Ingrese el numero hexadecimal: ");
+              s = r.next();
+              System.out.println(m.mOps.hexaToDeci(s));
+              break;
+
+            case 2:
+              System.out.print("Ingrese el numero hexadecimal: ");
+              s = r.nextLine();
+              System.out.println(s);
+              break;
+
+            case 3:
+              System.out.print("Ingrese el numero hexadecimal: ");
+              s = r.nextLine();
+              System.out.println(m.mOps.hexToBin(s));
+              break;
+            }
+            break;
+
+          case 3:
+            System.out.println("Elija el tipo de numero destino:\n" + LISTTYP);
+            opt = r.nextInt();
+            switch (opt) {
+            case 1:
+              System.out.print("Ingrese el numero binario: ");
+              num1 = r.nextDouble();
+              System.out.println(m.mOps.binToDeci((int) num1));
+              break;
+
+            case 2:
+              System.out.print("Ingrese el numero binario: ");
+              num1 = r.nextInt();
+              System.out.println(m.mOps.binToHexa((int)num1));
+              break;
+
+            case 3:
+              System.out.print("Ingrese el numero binario: ");
+              s = r.nextLine();
+              System.out.println(s);
+              break;
+            }
+            break;
+          }
+
+          break;
 
         }
 
