@@ -213,7 +213,7 @@ public class Calculator {
             case 2:
               System.out.print("Ingrese el numero binario: ");
               num1 = r.nextInt();
-              System.out.println(m.mOps.binToHexa((int)num1));
+              System.out.println(m.mOps.binToHexa((int) num1));
               break;
 
             case 3:

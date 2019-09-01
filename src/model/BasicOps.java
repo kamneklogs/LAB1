@@ -1,4 +1,5 @@
 package model;
+
 import java.util.Scanner;
 
 public class BasicOps {
@@ -11,9 +12,9 @@ public class BasicOps {
     }
 
     /**
-     * This method performs the sum of two numbers 
-     * <b>pre:</b> I don't know <br>
+     * This method performs the sum of two numbers <b>pre:</b> I don't know <br>
      * <b>post:</b> The sum hs been printed <br>
+     * 
      * @param num1 is a number . num1 != null
      * @param num2 is a number . num2 != null
      */
@@ -27,9 +28,9 @@ public class BasicOps {
     }
 
     public double div(double num1, double num2) {
-        
-            return num1 / num2;
-        
+
+        return num1 / num2;
+
     }
 
     public double multi(double num1, double num2) {
@@ -37,10 +38,8 @@ public class BasicOps {
     }
 
     public double mod(double num1, double num2) {
-        
-            return num1 % num2;
-      
 
+        return num1 % num2;
 
     }
 
