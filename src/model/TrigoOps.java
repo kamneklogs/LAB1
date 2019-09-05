@@ -2,8 +2,9 @@ package model;
 
 import java.lang.StrictMath;
 import java.util.Scanner;
+import model.MediumOps;
 
-public class TrigoOps {
+public class TrigoOps extends MediumOps {
 
     private double var;
     private int opt;
@@ -16,54 +17,22 @@ public class TrigoOps {
         r = new Scanner(System.in);
     }
 
-    public double sin() {
+    public double sin(double num1) {
 
-        System.out.println(
-                "1. Ingresar en grados.\n2. Ingresar en radianes.\n     Nota: Solo se admiten angulos o radianes notables.");
-        opt = r.nextInt();
-        System.out.println();
-        if (opt == 1) {
-            System.out.println(LDEGREES);
-        }
-        if (opt == 2) {
-            System.out.println(LRADIAN);
-        }
-        opt = r.nextInt();
-        switch (opt) {
-        case 1:
-            var = 0;
-            break;
+        num1 = toRadians(num1);
+        int count = 1;
+        double pow1 = 1, pow2 = 3, y, sump = 0.0, sumn = 0.0;
 
-        case 2:
-            var = 1.5;
-            break;
+        do {
+            sump = sump + (StrictMath.pow(num1, pow1)) / complOps.fact((int) pow1);
+            pow1 += 4;
+            sumn = sumn - (StrictMath.pow(num1, pow2)) / complOps.fact((int) pow2);
+            pow2 += 4;
+            cont++;
+        } while (count < 4);
+        y = sump + sumn;
 
-        case 3:
-            var = 0.707106;
-            break;
-
-        case 4:
-            var = 0.8660254;
-            break;
-
-        case 5:
-            var = 1;
-            break;
-
-        case 6:
-            var = 0;
-            break;
-
-        case 7:
-            var = -1;
-            break;
-
-        case 8:
-            var = 0;
-            break;
-
-        }
-        return var;
+        return y;
 
     }
 

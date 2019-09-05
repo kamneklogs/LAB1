@@ -83,7 +83,9 @@ public class Calculator {
           break;
 
         case 6:
-          System.out.println(m.tOps.sin());
+          System.out.print("Num 1 (grados) = ");
+          num1 = r.nextDouble();
+          System.out.println(m.tOps.sin(num1));
           break;
 
         case 7:
