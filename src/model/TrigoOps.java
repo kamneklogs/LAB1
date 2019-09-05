@@ -13,6 +13,7 @@ public class TrigoOps extends MediumOps {
 
     private Scanner r;
 
+
     public TrigoOps() {
         r = new Scanner(System.in);
     }
@@ -24,11 +25,11 @@ public class TrigoOps extends MediumOps {
         double pow1 = 1, pow2 = 3, y, sump = 0.0, sumn = 0.0;
 
         do {
-            sump = sump + (StrictMath.pow(num1, pow1)) / complOps.fact((int) pow1);
+            sump = sump + (StrictMath.pow(num1, pow1)) / fact((int) pow1);
             pow1 += 4;
-            sumn = sumn - (StrictMath.pow(num1, pow2)) / complOps.fact((int) pow2);
+            sumn = sumn - (StrictMath.pow(num1, pow2)) / fact((int) pow2);
             pow2 += 4;
-            cont++;
+            count++;
         } while (count < 4);
         y = sump + sumn;
 

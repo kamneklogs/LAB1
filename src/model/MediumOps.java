@@ -19,6 +19,7 @@ public class MediumOps {
     public double log(double num1, double num2) {
 
         return Math.log10(num2) / Math.log10(num1);
+        
     }
 
     public double sqrt(double num1) {
@@ -56,7 +57,32 @@ public class MediumOps {
     }
 
     public double pow(double num1, double num2) {
-        return Math.pow(num1, num2);
+        double r = num1;
+        int count = 0;
+        double val = num1;
+
+        if (num2 == 0) {
+            return 1;
+        }
+
+        if (num2 == 1) {
+            return r;
+        }
+
+        if (num2 == 0.5) {
+            return sqrt(r);
+        }
+
+        if (num2 < 0) {
+            return (1 / (pow(r, (num2 * -1))));
+        }
+
+        do {
+            val = val * r;
+            count++;
+        } while ((count + 1) != (int) num2);
+
+        return val;
     }
 
     public int fact(int num1) {
@@ -206,6 +232,12 @@ public class MediumOps {
     public String binToHexa(int num1) {
         int num = binToDeci(num1);
         return decToHexa(num);
+    }
+
+    public double pow10x(double num1){
+
+        return pow( 10, num1);
+        
     }
 
 }
