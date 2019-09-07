@@ -89,7 +89,9 @@ public class Calculator {
           break;
 
         case 7:
-          System.out.println(m.tOps.cos());
+          System.out.println("Num 1 (grados) = ");
+          num1 = r.nextDouble();
+          System.out.println(m.tOps.cosin(num1));
           break;
 
         case 8:

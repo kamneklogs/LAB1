@@ -37,59 +37,61 @@ public class TrigoOps extends MediumOps {
 
     }
 
-    public double cos() {
+    
+    public double cosin(double num1) {
 
-        System.out.println(
-                "1. Ingresar en grados.\n2. Ingresar en radianes.\n     Nota: Solo se admiten angulos o radianes notables.");
-        opt = r.nextInt();
-        System.out.println();
-        if (opt == 1) {
-            System.out.println(LDEGREES);
+        int j = 1, m = -1;
+        double r = 0, y = 0, rad;
+        rad = toRadians(num1);
+        y = 1.0;
+        if (num1 >= 0 && num1 < 120) {
+            for (int k = 2; k < 5; k = k + 2) {
+
+                double o = StrictMath.pow(rad, k);
+                j = j * (k - 1) * k;
+                y = o / j;
+                y = y + m * r;
+                m = m * (-1);
+
+            }
+            return y;
         }
+        if (num1 >= 120 && num1 < 200) {
 
-        if (opt == 2) {
-            System.out.println(LRADIAN);
+            for (int k = 2; k < 10; k = k + 2) {
+                double o = StrictMath.pow(rad, k);
+                j = j * (k - 1) * k;
+                r = o / j;
+                y = y + m * r;
+                m = m * (-1);
+            }
+            return y;
+        } 
+        if (num1 >= 200 && num1 < 300) {
+
+            for (int k = 2; k < 13; k = k + 2) {
+                double o = StrictMath.pow(rad, k);
+                j = j * (k - 1) * k;
+                r = o / j;
+                y = y + m * r;
+                m = m * (-1);
+            }
+            return y;
+        } 
+        
+        else {
+            for (int k = 2; k < 14; k = k + 2) {
+                double o = StrictMath.pow(rad, k);
+                j = j * (k - 1) * k;
+                r = o / j;
+                y = y + m * r;
+                m = m * (-1);
+            }
+            return y;
         }
-
-        opt = r.nextInt();
-        switch (opt) {
-        case 1:
-            var = 1;
-            break;
-
-        case 2:
-            var = 0.8660254;
-            break;
-
-        case 3:
-            var = 0.707106;
-            break;
-
-        case 4:
-            var = 0.866025;
-            break;
-
-        case 5:
-            var = 1;
-            break;
-
-        case 6:
-            var = 0;
-            break;
-
-        case 7:
-            var = -1;
-            break;
-
-        case 8:
-            var = 0;
-
-            break;
-
-        }
-
-        return var;
     }
+
+
 
     public double tan() {
 
