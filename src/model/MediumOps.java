@@ -19,7 +19,7 @@ public class MediumOps {
     public double log(double num1, double num2) {
 
         return Math.log10(num2) / Math.log10(num1);
-        
+
     }
 
     public double sqrt(double num1) {
@@ -234,10 +234,122 @@ public class MediumOps {
         return decToHexa(num);
     }
 
-    public double pow10x(double num1){
+    public double pow10x(double num1) {
 
-        return pow( 10, num1);
-        
+        return pow(10, num1);
+
     }
 
+    // Metodo que calcula el logaritmo de un numero en base n
+    public static double log(double x, int base) {
+
+        int decimalplace = 3;
+        int integer_value = 0;
+
+        while (x < 1) {
+            integer_value--;
+            x = x * base;
+        }
+
+        while (x >= base) {
+            integer_value++;
+            x = x / base;
+        }
+        double decimal_fraction = 0.0;
+        double partial = 1.0;
+
+        x = StrictMath.pow(x, 10);
+
+        while (decimalplace > 0) {
+
+            partial = partial / 10;
+            int digit = 0;
+
+            while (x >= base) {
+                digit++;
+                x = x / base;
+            }
+            decimal_fraction = decimal_fraction + digit * partial;
+
+            x = StrictMath.pow(x, 10);
+            decimalplace--;
+        }
+        return integer_value + decimal_fraction;
+    }
+
+    // Metoo que calcula el logarito natural de un numero
+    public static double nlog(double x) {
+
+        double base = StrictMath.E;
+        int decimalplace = 3;
+        int integer_value = 0;
+
+        while (x < 1) {
+            integer_value--;
+            x = x * base;
+        }
+
+        while (x >= base) {
+            integer_value++;
+            x = x / base;
+        }
+        double decimal_fraction = 0.0;
+        double partial = 1.0;
+
+        x = StrictMath.pow(x, 10);
+
+        while (decimalplace > 0) {
+
+            partial = partial / 10;
+            int digit = 0;
+
+            while (x >= base) {
+                digit++;
+                x = x / base;
+            }
+            decimal_fraction = decimal_fraction + digit * partial;
+
+            x = StrictMath.pow(x, 10);
+            decimalplace--;
+        }
+        return integer_value + decimal_fraction;
+    }
+
+    // Metodo que calcula el logaritmo base 10 de un numeros
+    public static double log10(double x) {
+
+        double base = 10;
+        int decimalplace = 3;
+        int integer_value = 0;
+
+        while (x < 1) {
+            integer_value--;
+            x = x * base;
+        }
+
+        while (x >= base) {
+            integer_value++;
+            x = x / base;
+        }
+        double decimal_fraction = 0.0;
+        double partial = 1.0;
+
+        x = StrictMath.pow(x, 10);
+
+        while (decimalplace > 0) {
+
+            partial = partial / 10;
+            int digit = 0;
+
+            while (x >= base) {
+                digit++;
+                x = x / base;
+            }
+            decimal_fraction = decimal_fraction + digit * partial;
+
+            x = StrictMath.pow(x, 10);
+            decimalplace--;
+        }
+        return integer_value + decimal_fraction;
+    }
 }

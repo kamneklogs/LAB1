@@ -89,13 +89,15 @@ public class Calculator {
           break;
 
         case 7:
-          System.out.println("Num 1 (grados) = ");
+          System.out.print("Num 1 (grados) = ");
           num1 = r.nextDouble();
           System.out.println(m.tOps.cosin(num1));
           break;
 
         case 8:
-          System.out.println(m.tOps.tan());
+          System.out.print("Num 1 (grados) = ");
+          num1 = r.nextDouble();
+          System.out.println(m.tOps.tan(num1));
           break;
 
         case 9:
