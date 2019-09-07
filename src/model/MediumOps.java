@@ -48,14 +48,6 @@ public class MediumOps {
 
     }
 
-    public double nroot(double num1, double num2) {
-
-        var = Math.pow(num2, 1 / num1);
-
-        return var;
-
-    }
-
     public double pow(double num1, double num2) {
         double r = num1;
         int count = 0;
@@ -71,6 +63,10 @@ public class MediumOps {
 
         if (num2 == 0.5) {
             return sqrt(r);
+        }
+
+        if (num2 < 1 && num2 > 0) {
+            return StrictMath.pow(num1, num2);
         }
 
         if (num2 < 0) {
@@ -278,7 +274,7 @@ public class MediumOps {
     }
 
     // Metoo que calcula el logarito natural de un numero
-    public static double nlog(double x) {
+    public static double ln(double x) {
 
         double base = StrictMath.E;
         int decimalplace = 3;
@@ -351,5 +347,9 @@ public class MediumOps {
             decimalplace--;
         }
         return integer_value + decimal_fraction;
+    }
+
+    public double nRoot(double num1, double num2) {
+        return pow(num2, (1 / num1)); //The function pow() was done by me.
     }
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Calculator {
 
-  private static final String LISTOPS = "Opciones:\n\n1. Suma\n2. Resta.\n3. Division.\n4. Multiplicacion.\n5. Modulo.\n6. Seno.\n7. Coseno.\n8. Tangente.\n9. Logaritmo base 10 y base n.\n10. Raiz cuadrada.\n11. Raiz n-esima.\n12. Potenciacion.\n13. Base 10 de un numero x.\n14. Memoria de los resultados de las ultimas 10 operaciones. (Estos resultados pueden ser usados en la operacion actual del usuario). \n15. El factorial de un numero.\n16. La conversion de grados a radianes.\n17. La conversion de Radianes a Grados.\n18. La conversion entre binarios, decimales y hexadecimales.\n";
+  private static final String LISTOPS = "Opciones:\n\n1. Suma\n2. Resta.\n3. Division.\n4. Multiplicacion.\n5. Modulo.\n6. Seno.\n7. Coseno.\n8. Tangente.\n9. Logaritmo.\n10. Raiz cuadrada.\n11. Raiz n-esima.\n12. Potenciacion.\n13. Base 10 de un numero x.\n14. Memoria de los resultados de las ultimas 10 operaciones. (Estos resultados pueden ser usados en la operacion actual del usuario). \n15. El factorial de un numero.\n16. La conversion de grados a radianes.\n17. La conversion de Radianes a Grados.\n18. La conversion entre binarios, decimales y hexadecimales.\n19. Logaritmo base 10.\n20. Logaritmo natural.\n";
   private static final String LISTTYP = "1. Decimales.\n2. Hexadecimales.\n3. Binarios ";
   private static int opt;
   // private static double[] memory = new double[9];
@@ -115,11 +115,11 @@ public class Calculator {
           break;
 
         case 11:
-          System.out.println("Ingrese el radical: ");
+          System.out.println("Ingrese el indice: ");
           num1 = r.nextDouble();
           System.out.println("Ingrese el radicando: ");
           num2 = r.nextDouble();
-          System.out.println(m.mOps.nroot(num1, num2));
+          System.out.println(m.mOps.nRoot(num1, num2));
           break;
 
         case 12:
@@ -231,6 +231,19 @@ public class Calculator {
             break;
           }
 
+          break;
+
+        case 19:
+          
+          System.out.print("Ingrese el argumento = ");
+          num2 = r.nextDouble();
+          System.out.println(m.mOps.log10(num2));
+          break;
+
+        case 20:
+          System.out.print("Ingrese el argumento = ");
+          num2 = r.nextDouble();
+          System.out.println(m.mOps.ln(num2));
           break;
 
         }

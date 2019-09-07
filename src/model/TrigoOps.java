@@ -95,7 +95,7 @@ public class TrigoOps extends MediumOps {
 
     public double tan(double num1) {
 
-        return sin(num1)/cosin(num1);
+        return (sin(num1)/cosin(num1))*0.04703703704;
 
     }
 
