@@ -5,7 +5,8 @@ import java.lang.*;
 
 /**
  * The MediumOps.java it's so util. Recommended
- * @author  Camilo Cordoba
+ * 
+ * @author Camilo Cordoba
  * @since 1.0
  */
 public class MediumOps {
@@ -15,7 +16,6 @@ public class MediumOps {
     private double aux, babylonial;
     static char hexdec[];
 
-    
     /** 
      * 
      */
@@ -47,8 +47,7 @@ public class MediumOps {
         return babylonial;
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @return double
      */
@@ -61,8 +60,7 @@ public class MediumOps {
 
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @param num2
      * @return double
@@ -100,8 +98,7 @@ public class MediumOps {
         return val;
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @return int
      */
@@ -114,8 +111,7 @@ public class MediumOps {
         return res;
     }
 
-    
-    /** 
+    /**
      * @param s
      * @return String
      */
@@ -191,8 +187,7 @@ public class MediumOps {
         return varR;
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @return String
      */
@@ -224,8 +219,7 @@ public class MediumOps {
 
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @return int
      */
@@ -251,8 +245,7 @@ public class MediumOps {
         return dec_value;
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @return String
      */
@@ -263,8 +256,7 @@ public class MediumOps {
 
     }
 
-    
-    /** 
+    /**
      * @param s
      * @return int
      */
@@ -274,8 +266,7 @@ public class MediumOps {
         return binToDeci(num1);
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @return String
      */
@@ -284,8 +275,7 @@ public class MediumOps {
         return decToHexa(num);
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @return double
      */
@@ -295,8 +285,7 @@ public class MediumOps {
 
     }
 
-    
-    /** 
+    /**
      * @param x
      * @param base
      * @return double
@@ -337,8 +326,7 @@ public class MediumOps {
         return integer_value + decimal_fraction;
     }
 
-    
-    /** 
+    /**
      * @param x
      * @return double
      */
@@ -379,8 +367,7 @@ public class MediumOps {
         return integer_value + decimal_fraction;
     }
 
-    
-    /** 
+    /**
      * @param x
      * @return double
      */
@@ -421,8 +408,7 @@ public class MediumOps {
         return integer_value + decimal_fraction;
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @param num2
      * @return double

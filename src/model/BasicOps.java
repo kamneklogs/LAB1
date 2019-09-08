@@ -2,22 +2,25 @@ package model;
 
 import java.util.Scanner;
 
+
 /**
  * The BasicOps.java it's so util. Also recommended
- * @author  Camilo Cordoba
+ * 
+ * @author Camilo Cordoba
  * @since 1.0
  */
 public class BasicOps {
 
-    double num1;
-    double num2;
-    Scanner r = new Scanner(System.in);
+    private String[] memory;
 
-    
     /** 
      * 
      */
     public BasicOps() {
+        memory = new String[10];
+        for(int i = 0; i != memory.length; i++){
+            memory[i] = "Vacio";
+        }
     }
 
     /**
@@ -31,9 +34,8 @@ public class BasicOps {
     public double sum(double num1, double num2) {
         return num1 + num2;
     }
-    
-    
-    /** 
+
+    /**
      * @param num1
      * @param num2
      * @return double
@@ -42,8 +44,7 @@ public class BasicOps {
         return num1 - num2;
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @param num2
      * @return double
@@ -54,8 +55,7 @@ public class BasicOps {
 
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @param num2
      * @return double
@@ -64,8 +64,7 @@ public class BasicOps {
         return num1 * num2;
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @param num2
      * @return double
@@ -74,6 +73,33 @@ public class BasicOps {
 
         return num1 % num2;
 
+    }
+
+    public String memoryToString() {
+        String list = "";
+        for (int i = 0; i < memory.length; i++) {
+            if (i == 9) {
+                list += "\n " + (i + 1) + ".   " + memory[i];
+            } else {
+                list += "\n " + (i + 1) + ".    " + memory[i];
+            }
+        }
+        return list;
+    }
+
+    public String getMemory(int opt) {
+
+        return memory[opt - 1];
+
+    }
+
+    public void addToMemory(String s){
+        
+        for(int i = 8; i != -1; i--){
+            memory[i+1] = memory[i];
+            //System.out.println("entro al for");
+        }
+        memory[0] = s;
     }
 
 }

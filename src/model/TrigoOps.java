@@ -6,22 +6,20 @@ import model.MediumOps;
 
 /**
  * The TrigoOps has five of the important trigonometric functions.
- * @author  Camilo Cordoba.
+ * 
+ * @author Camilo Cordoba.
  * @since 1.0
  */
 public class TrigoOps extends MediumOps {
 
-
-    
     /** 
      * 
      */
     public TrigoOps() {
-       
+
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @return double
      */
@@ -44,8 +42,7 @@ public class TrigoOps extends MediumOps {
 
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @return double
      */
@@ -118,8 +115,7 @@ public class TrigoOps extends MediumOps {
 
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @return double
      */
@@ -129,8 +125,7 @@ public class TrigoOps extends MediumOps {
 
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @return double
      */
@@ -139,8 +134,7 @@ public class TrigoOps extends MediumOps {
         return num1 * (180 / StrictMath.PI);
     }
 
-    
-    /** 
+    /**
      * @param num1
      * @return double
      */
