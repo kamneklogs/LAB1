@@ -7,7 +7,7 @@ public class MediumOps {
 
     private double n, nn, r;
     private double max = Double.MAX_VALUE;
-    private double aux, babylonial, var;
+    private double aux, babylonial;
     static char hexdec[];
 
     public MediumOps() {
@@ -236,8 +236,7 @@ public class MediumOps {
 
     }
 
-    // Metodo que calcula el logaritmo de un numero en base n
-    public static double log(double x, int base) {
+    public double log(double x, int base) {
 
         int decimalplace = 3;
         int integer_value = 0;
@@ -273,8 +272,7 @@ public class MediumOps {
         return integer_value + decimal_fraction;
     }
 
-    // Metoo que calcula el logarito natural de un numero
-    public static double ln(double x) {
+    public double ln(double x) {
 
         double base = StrictMath.E;
         int decimalplace = 3;
@@ -311,8 +309,7 @@ public class MediumOps {
         return integer_value + decimal_fraction;
     }
 
-    // Metodo que calcula el logaritmo base 10 de un numeros
-    public static double log10(double x) {
+    public double log10(double x) {
 
         double base = 10;
         int decimalplace = 3;
@@ -350,6 +347,6 @@ public class MediumOps {
     }
 
     public double nRoot(double num1, double num2) {
-        return pow(num2, (1 / num1)); //The function pow() was done by me.
+        return pow(num2, (1 / num1)); // The function pow() was done by me.
     }
 }

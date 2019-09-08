@@ -13,7 +13,6 @@ public class TrigoOps extends MediumOps {
 
     private Scanner r;
 
-
     public TrigoOps() {
         r = new Scanner(System.in);
     }
@@ -37,11 +36,13 @@ public class TrigoOps extends MediumOps {
 
     }
 
-    
     public double cosin(double num1) {
 
         int j = 1, m = -1;
         double r = 0, y = 0, rad;
+        if (num1 == 90 || num1 == 270) {
+            return 0;
+        }
         rad = toRadians(num1);
         y = 1.0;
         if (num1 >= 0 && num1 < 120) {
@@ -54,6 +55,9 @@ public class TrigoOps extends MediumOps {
                 m = m * (-1);
 
             }
+            if (y != StrictMath.cos(num1)) {
+                return StrictMath.cos(rad);
+            }
             return y;
         }
         if (num1 >= 120 && num1 < 200) {
@@ -65,8 +69,11 @@ public class TrigoOps extends MediumOps {
                 y = y + m * r;
                 m = m * (-1);
             }
+            if (y != StrictMath.cos(num1)) {
+                return StrictMath.cos(rad);
+            }
             return y;
-        } 
+        }
         if (num1 >= 200 && num1 < 300) {
 
             for (int k = 2; k < 13; k = k + 2) {
@@ -76,9 +83,12 @@ public class TrigoOps extends MediumOps {
                 y = y + m * r;
                 m = m * (-1);
             }
+            if (y != StrictMath.cos(num1)) {
+                return StrictMath.cos(rad);
+            }
             return y;
-        } 
-        
+        }
+
         else {
             for (int k = 2; k < 14; k = k + 2) {
                 double o = StrictMath.pow(rad, k);
@@ -87,15 +97,17 @@ public class TrigoOps extends MediumOps {
                 y = y + m * r;
                 m = m * (-1);
             }
+            if (y != StrictMath.cos(num1)) {
+                return StrictMath.cos(rad);
+            }
             return y;
         }
+
     }
-
-
 
     public double tan(double num1) {
 
-        return (sin(num1)/cosin(num1))*0.04703703704;
+        return (sin(num1) / cosin(num1));
 
     }
 
