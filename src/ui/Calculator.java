@@ -184,7 +184,7 @@ public class Calculator {
             case 2:
               System.out.print("\nIngrese el numero: ");
               num1 = r.nextDouble();
-              System.out.println(m.mOps.decToBin((int) num1));
+              System.out.println(m.mOps.decToHexa((int) num1));
               break;
 
             case 3:
