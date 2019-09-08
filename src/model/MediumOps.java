@@ -3,6 +3,11 @@ package model;
 import java.math.*;
 import java.lang.*;
 
+/**
+ * The MediumOps.java it's so util. Recommended
+ * @author  Camilo Cordoba
+ * @since 1.0
+ */
 public class MediumOps {
 
     private double n, nn, r;
@@ -10,18 +15,21 @@ public class MediumOps {
     private double aux, babylonial;
     static char hexdec[];
 
+    
+    /** 
+     * 
+     */
     public MediumOps() {
 
         hexdec = new char[100];
 
     }
 
-    public double log(double num1, double num2) {
-
-        return Math.log10(num2) / Math.log10(num1);
-
-    }
-
+    /**
+     * 
+     * @param num1
+     * @return
+     */
     public double sqrt(double num1) {
         for (int i = 0; i < Integer.MAX_VALUE; i++) {
             r = i * i;
@@ -39,6 +47,11 @@ public class MediumOps {
         return babylonial;
     }
 
+    
+    /** 
+     * @param num1
+     * @return double
+     */
     public double abs(double num1) {
 
         if (num1 < 0) {
@@ -48,6 +61,12 @@ public class MediumOps {
 
     }
 
+    
+    /** 
+     * @param num1
+     * @param num2
+     * @return double
+     */
     public double pow(double num1, double num2) {
         double r = num1;
         int count = 0;
@@ -81,6 +100,11 @@ public class MediumOps {
         return val;
     }
 
+    
+    /** 
+     * @param num1
+     * @return int
+     */
     public int fact(int num1) {
 
         int res = 1, i;
@@ -90,6 +114,11 @@ public class MediumOps {
         return res;
     }
 
+    
+    /** 
+     * @param s
+     * @return String
+     */
     public String hexToBin(String s) {
 
         String varR = "";
@@ -162,6 +191,11 @@ public class MediumOps {
         return varR;
     }
 
+    
+    /** 
+     * @param num1
+     * @return String
+     */
     public String decToHexa(int num1) {
         double residue;
         StringBuilder convertion = new StringBuilder(num1);
@@ -190,6 +224,11 @@ public class MediumOps {
 
     }
 
+    
+    /** 
+     * @param num1
+     * @return int
+     */
     public int binToDeci(int num1) {
 
         int num = num1;
@@ -212,6 +251,11 @@ public class MediumOps {
         return dec_value;
     }
 
+    
+    /** 
+     * @param num1
+     * @return String
+     */
     public String decToBin(int num1) {
 
         String s = decToHexa(num1);
@@ -219,23 +263,44 @@ public class MediumOps {
 
     }
 
+    
+    /** 
+     * @param s
+     * @return int
+     */
     public int hexaToDeci(String s) {
         String str = hexToBin(s);
         int num1 = Integer.parseInt(str.trim());
         return binToDeci(num1);
     }
 
+    
+    /** 
+     * @param num1
+     * @return String
+     */
     public String binToHexa(int num1) {
         int num = binToDeci(num1);
         return decToHexa(num);
     }
 
+    
+    /** 
+     * @param num1
+     * @return double
+     */
     public double pow10x(double num1) {
 
         return pow(10, num1);
 
     }
 
+    
+    /** 
+     * @param x
+     * @param base
+     * @return double
+     */
     public double log(double x, int base) {
 
         int decimalplace = 3;
@@ -272,6 +337,11 @@ public class MediumOps {
         return integer_value + decimal_fraction;
     }
 
+    
+    /** 
+     * @param x
+     * @return double
+     */
     public double ln(double x) {
 
         double base = StrictMath.E;
@@ -309,6 +379,11 @@ public class MediumOps {
         return integer_value + decimal_fraction;
     }
 
+    
+    /** 
+     * @param x
+     * @return double
+     */
     public double log10(double x) {
 
         double base = 10;
@@ -346,6 +421,12 @@ public class MediumOps {
         return integer_value + decimal_fraction;
     }
 
+    
+    /** 
+     * @param num1
+     * @param num2
+     * @return double
+     */
     public double nRoot(double num1, double num2) {
         return pow(num2, (1 / num1)); // The function pow() was done by me.
     }

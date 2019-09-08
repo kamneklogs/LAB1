@@ -2,12 +2,21 @@ package model;
 
 import java.util.Scanner;
 
+/**
+ * The BasicOps.java it's so util. Also recommended
+ * @author  Camilo Cordoba
+ * @since 1.0
+ */
 public class BasicOps {
 
     double num1;
     double num2;
     Scanner r = new Scanner(System.in);
 
+    
+    /** 
+     * 
+     */
     public BasicOps() {
     }
 
@@ -22,21 +31,45 @@ public class BasicOps {
     public double sum(double num1, double num2) {
         return num1 + num2;
     }
-
+    
+    
+    /** 
+     * @param num1
+     * @param num2
+     * @return double
+     */
     public double subt(double num1, double num2) {
         return num1 - num2;
     }
 
+    
+    /** 
+     * @param num1
+     * @param num2
+     * @return double
+     */
     public double div(double num1, double num2) {
 
         return num1 / num2;
 
     }
 
+    
+    /** 
+     * @param num1
+     * @param num2
+     * @return double
+     */
     public double multi(double num1, double num2) {
         return num1 * num2;
     }
 
+    
+    /** 
+     * @param num1
+     * @param num2
+     * @return double
+     */
     public double mod(double num1, double num2) {
 
         return num1 % num2;

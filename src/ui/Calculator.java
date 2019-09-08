@@ -3,6 +3,11 @@ package ui;
 import model.*;
 import java.util.Scanner;
 
+/**
+ * The app Camilo's Calulator is a great invention done by humanity. 
+ * @since 1.0
+ * @author Camilo Cordoba
+ */
 public class Calculator {
 
   private static final String LISTOPS = "\n\n\nOpciones:\n\n1. Suma\n2. Resta.\n3. Division.\n4. Multiplicacion.\n5. Modulo.\n6. Seno.\n7. Coseno.\n8. Tangente.\n9. Logaritmo.\n10. Raiz cuadrada.\n11. Raiz n-esima.\n12. Potenciacion.\n13. Base 10 de un numero x.\n14. Memoria de los resultados de las ultimas 10 operaciones. (Estos resultados pueden ser usados en la operacion actual del usuario). \n15. El factorial de un numero.\n16. La conversion de grados a radianes.\n17. La conversion de Radianes a Grados.\n18. La conversion entre binarios, decimales y hexadecimales.\n19. Logaritmo base 10.\n20. Logaritmo natural.\n";
@@ -16,6 +21,10 @@ public class Calculator {
   private MediumOps mOps;
   private TrigoOps tOps;
 
+  
+  /** 
+   * This constructor make all relations tree
+   */
   public Calculator() {
     bOps = new BasicOps();
     mOps = new MediumOps();
@@ -23,6 +32,10 @@ public class Calculator {
     r = new Scanner(System.in);
   }
 
+  
+  /** 
+   * This does some not do something important xD
+   */
   public static void main(String[] args) {
     Calculator m = new Calculator();
     opt = 0;
@@ -105,7 +118,7 @@ public class Calculator {
           num1 = r.nextDouble();
           System.out.println("\nIngrese el argumento");
           num2 = r.nextDouble();
-          System.out.println("\nEl resultado es: " + m.mOps.log(num1, num2));
+          System.out.println("\nEl resultado es: " + m.mOps.log(num1, (int)num2));
           break;
 
         case 10:

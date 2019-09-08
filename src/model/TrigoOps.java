@@ -4,19 +4,27 @@ import java.lang.StrictMath;
 import java.util.Scanner;
 import model.MediumOps;
 
+/**
+ * The TrigoOps has five of the important trigonometric functions.
+ * @author  Camilo Cordoba.
+ * @since 1.0
+ */
 public class TrigoOps extends MediumOps {
 
-    private double var;
-    private int opt;
-    private static final String LDEGREES = "1. 0g\n2. 30g\n3. 45g\n4. 60g\n5. 90g\n6. 180g\n7. 270g\n8. 360g\n";
-    private static final String LRADIAN = "Numero Pi = II\n1. 0.\n2. II/6\n3. II/4\n4. II/3\n5. II/2\n6. II\n7. (3/2)II\n8. 2II\n";
 
-    private Scanner r;
-
+    
+    /** 
+     * 
+     */
     public TrigoOps() {
-        r = new Scanner(System.in);
+       
     }
 
+    
+    /** 
+     * @param num1
+     * @return double
+     */
     public double sin(double num1) {
 
         num1 = toRadians(num1);
@@ -36,6 +44,11 @@ public class TrigoOps extends MediumOps {
 
     }
 
+    
+    /** 
+     * @param num1
+     * @return double
+     */
     public double cosin(double num1) {
 
         int j = 1, m = -1;
@@ -105,17 +118,32 @@ public class TrigoOps extends MediumOps {
 
     }
 
+    
+    /** 
+     * @param num1
+     * @return double
+     */
     public double tan(double num1) {
 
         return (sin(num1) / cosin(num1));
 
     }
 
+    
+    /** 
+     * @param num1
+     * @return double
+     */
     public double toDegrees(double num1) {
 
         return num1 * (180 / StrictMath.PI);
     }
 
+    
+    /** 
+     * @param num1
+     * @return double
+     */
     public double toRadians(double num1) {
 
         return num1 * (StrictMath.PI / 180);
