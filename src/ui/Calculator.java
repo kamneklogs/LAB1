@@ -4,7 +4,7 @@ import model.*;
 import java.util.Scanner;
 
 /**
- * The app Camilo's Calulator is a great invention done by humanity.
+ * The app Camilo's Calulator is a great invention done by humanity. All rights reserved!!
  * 
  * @since 1.0
  * @author Camilo Cordoba
@@ -32,18 +32,16 @@ public class Calculator {
     r = new Scanner(System.in);
   }
 
-  /**
-   * This does some not do something important xD
-   */
   public static void main(String[] args) {
     Calculator m = new Calculator();
     opt = 0;
+    System.out.print("                                   _____________________\n                                  |  _________________  |\n                                  | | JO           0. | |\n                                  | |_________________| |\n                                  |  ___ ___ ___   ___  |\n                                  | | 7 | 8 | 9 | | + | |\n                                  | |___|___|___| |___| |\n                                  | | 4 | 5 | 6 | | - | |\n                                  | |___|___|___| |___| |\n                                  | | 1 | 2 | 3 | | x | |\n                                  | |___|___|___| |___| |\n                                  | | . | 0 | = | | / | |\n                                  | |___|___|___| |___| |\n                                  |_____________________|\n");
     System.out
-        .println("\n\n**********************************************************************************************");
+        .println("\n *********************************************************************************************");
     System.out
-        .println("|                      CAMILO'S CALCULATOR VERSION PREMIUM FULL HD 4K                        |");
+        .println("|                      CAMILO'S CALCULATOR PREMIUM VERSION FULL HD 4K                        |");
     System.out
-        .println("**********************************************************************************************\n");
+        .println(" *********************************************************************************************\n");
 
     do {
       System.out.println(
