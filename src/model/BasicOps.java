@@ -2,7 +2,6 @@ package model;
 
 import java.util.Scanner;
 
-
 /**
  * The BasicOps.java it's so util. Also recommended. All rights reserved!!
  * 
@@ -13,12 +12,12 @@ public class BasicOps {
 
     private String[] memory;
 
-    /** 
+    /**
      * This method is the constructor of class
      */
     public BasicOps() {
         memory = new String[10];
-        for(int i = 0; i != memory.length; i++){
+        for (int i = 0; i != memory.length; i++) {
             memory[i] = "Vacio";
         }
     }
@@ -27,6 +26,7 @@ public class BasicOps {
      * This method performs the sum of two numbers 
      * <b>pre:</b> num1 and num2 are valids parameters <br>
      * <b>post:</b> The sum was made <br>
+     * 
      * @param num1 is a number . num1 != null
      * @param num2 is a number . num2 != null
      * 
@@ -37,9 +37,10 @@ public class BasicOps {
     }
 
     /**
-     * This method performs the subtracion of two numbers
+     * This method performs the subtracion of two numbers 
      * <b>pre:</b> num1 and num2 are valids parameters <br>
      * <b>post:</b> The subtraction was made <br>
+     * 
      * @param num1 is a number Double type . num1 != null
      * @param num2 is a number Double type. num2 != null
      * @return double
@@ -49,9 +50,10 @@ public class BasicOps {
     }
 
     /**
-     * This method divides
+     * This method divides 
      * <b>pre:</b> num1 and num2 are valids parameters <br>
      * <b>post:</b> The divition was made <br>
+     * 
      * @param num1 is a number Double type . num1 != null
      * @param num2 is a number Double type . num2 != 0
      * @return double
@@ -64,6 +66,7 @@ public class BasicOps {
 
     /**
      * This method miltiplies
+     * 
      * @param num1 is a number Double type . num1 != null
      * @param num2 is a number Double type . num2 != null
      * @return double
@@ -74,6 +77,7 @@ public class BasicOps {
 
     /**
      * Return the module
+     * 
      * @param num1
      * @param num2
      * @return double
@@ -86,6 +90,7 @@ public class BasicOps {
 
     /**
      * This methor returns all array memory
+     * 
      * @return list
      * @author Camilo Cordoba
      */
@@ -103,6 +108,7 @@ public class BasicOps {
 
     /**
      * Get memory valor in memory[opt-1]
+     * 
      * @param opt
      * @return something
      */
@@ -114,13 +120,14 @@ public class BasicOps {
 
     /**
      * adds to Memory[]
+     * 
      * @param s
      * @author Camilo Corodoba
      */
-    public void addToMemory(String s){
-        
-        for(int i = 8; i != -1; i--){
-            memory[i+1] = memory[i];
+    public void addToMemory(String s) {
+
+        for (int i = 8; i != -1; i--) {
+            memory[i + 1] = memory[i];
         }
         memory[0] = s;
     }

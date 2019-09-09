@@ -4,7 +4,8 @@ import model.*;
 import java.util.Scanner;
 
 /**
- * The app Camilo's Calulator is a great invention done by humanity. All rights reserved!!
+ * The app Camilo's Calulator is a great invention done by humanity. All rights
+ * reserved!!
  * 
  * @since 1.0
  * @author Camilo Cordoba
@@ -35,7 +36,8 @@ public class Calculator {
   public static void main(String[] args) {
     Calculator m = new Calculator();
     opt = 0;
-    System.out.print("                                   _____________________\n                                  |  _________________  |\n                                  | | JO           0. | |\n                                  | |_________________| |\n                                  |  ___ ___ ___   ___  |\n                                  | | 7 | 8 | 9 | | + | |\n                                  | |___|___|___| |___| |\n                                  | | 4 | 5 | 6 | | - | |\n                                  | |___|___|___| |___| |\n                                  | | 1 | 2 | 3 | | x | |\n                                  | |___|___|___| |___| |\n                                  | | . | 0 | = | | / | |\n                                  | |___|___|___| |___| |\n                                  |_____________________|\n");
+    System.out.print(
+        "                                   _____________________\n                                  |  _________________  |\n                                  | | JO           0. | |\n                                  | |_________________| |\n                                  |  ___ ___ ___   ___  |\n                                  | | 7 | 8 | 9 | | + | |\n                                  | |___|___|___| |___| |\n                                  | | 4 | 5 | 6 | | - | |\n                                  | |___|___|___| |___| |\n                                  | | 1 | 2 | 3 | | x | |\n                                  | |___|___|___| |___| |\n                                  | | . | 0 | = | | / | |\n                                  | |___|___|___| |___| |\n                                  |_____________________|\n");
     System.out
         .println("\n *********************************************************************************************");
     System.out

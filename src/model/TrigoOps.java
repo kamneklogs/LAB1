@@ -5,7 +5,8 @@ import java.util.Scanner;
 import model.MediumOps;
 
 /**
- * The TrigoOps has five of the important trigonometric functions. ALL RIGHT RESERVED!!!!!!!!!
+ * The TrigoOps has five of the important trigonometric functions. ALL RIGHT
+ * RESERVED!!!!!!!!!
  * 
  * @author Camilo Cordoba.
  * @since 1.0
@@ -13,7 +14,7 @@ import model.MediumOps;
  */
 public class TrigoOps extends MediumOps {
 
-    /** 
+    /**
      * Constructor method
      */
     public TrigoOps() {
@@ -22,6 +23,7 @@ public class TrigoOps extends MediumOps {
 
     /**
      * CALCULATE THE TRIGONOMETRIC SINUS USING TAYLOR SERIES. Made BY me :3
+     * 
      * @param num1
      * @return double
      * @author Camilo Cordoba
@@ -47,6 +49,7 @@ public class TrigoOps extends MediumOps {
 
     /**
      * CALCULATE THE TRIGONOMETRIC COSINUS USING TAYLOR SERIES. Made BY me
+     * 
      * @param num1
      * @return double
      */
@@ -120,7 +123,8 @@ public class TrigoOps extends MediumOps {
     }
 
     /**
-     * CALCULATE TANGENT USING TAN = SIN/COSIN. MADE BY ME 
+     * CALCULATE TANGENT USING TAN = SIN/COSIN. MADE BY ME
+     * 
      * @param num1
      * @return double
      */
@@ -132,6 +136,7 @@ public class TrigoOps extends MediumOps {
 
     /**
      * Convert radians to degrees
+     * 
      * @param num1
      * @return double
      */
@@ -142,6 +147,7 @@ public class TrigoOps extends MediumOps {
 
     /**
      * Convert degrees to radians
+     * 
      * @param num1
      * @return double
      */

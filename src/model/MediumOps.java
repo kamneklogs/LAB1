@@ -4,7 +4,8 @@ import java.math.*;
 import java.lang.*;
 
 /**
- * The MediumOps.java it's so util. Recommended. ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ALL RIGHT RESERVED!!!!!!!!!!!!!!!!!!!!
+ * The MediumOps.java it's so util. Recommended. ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ALL RIGHT
+ * RESERVED!!!!!!!!!!!!!!!!!!!!
  * 
  * @author Camilo Cordoba
  * @since 1.0
@@ -16,7 +17,7 @@ public class MediumOps {
     private double aux, babylonial;
     static char hexdec[];
 
-    /** 
+    /**
      * Constructor method
      */
     public MediumOps() {
@@ -27,6 +28,7 @@ public class MediumOps {
 
     /**
      * calculate the square root using the Babylonian method
+     * 
      * @param num1
      * @return
      */
@@ -47,7 +49,9 @@ public class MediumOps {
         return babylonial;
     }
 
-    /**Calculate absole value
+    /**
+     * Calculate absole value
+     * 
      * @param num1
      * @return absolute value of num1
      */
@@ -60,7 +64,9 @@ public class MediumOps {
 
     }
 
-    /**calcuate the power
+    /**
+     * calcuate the power
+     * 
      * @param num1
      * @param num2
      * @return double
@@ -98,7 +104,9 @@ public class MediumOps {
         return val;
     }
 
-    /**Calculate the factorial
+    /**
+     * Calculate the factorial
+     * 
      * @param num1
      * @return int
      */
@@ -113,6 +121,7 @@ public class MediumOps {
 
     /**
      * Converts hexadecimal to binary
+     * 
      * @param s
      * @return String binary
      */
@@ -190,6 +199,7 @@ public class MediumOps {
 
     /**
      * Converts decimal to hexadecimal
+     * 
      * @param num1
      * @return String
      */
@@ -223,6 +233,7 @@ public class MediumOps {
 
     /**
      * Converts binary to decimal
+     * 
      * @param num1
      * @return int
      */
@@ -250,6 +261,7 @@ public class MediumOps {
 
     /**
      * Converts decimal to binary
+     * 
      * @param num1
      * @return String
      */
@@ -262,6 +274,7 @@ public class MediumOps {
 
     /**
      * Converts hexadecimal to decimal
+     * 
      * @param s
      * @return int
      */
@@ -273,6 +286,7 @@ public class MediumOps {
 
     /**
      * Converts binary to decimal
+     * 
      * @param num1
      * @return String
      */
@@ -281,8 +295,9 @@ public class MediumOps {
         return decToHexa(num);
     }
 
-    /** 
+    /**
      * Calculate the power of 10
+     * 
      * @param num1
      * @return double
      */
@@ -294,6 +309,7 @@ public class MediumOps {
 
     /**
      * Calculate the log
+     * 
      * @param x
      * @param base
      * @return double
@@ -334,7 +350,9 @@ public class MediumOps {
         return integer_value + decimal_fraction;
     }
 
-    /**Calculate the natural log
+    /**
+     * Calculate the natural log
+     * 
      * @param x
      * @return double
      */
@@ -377,6 +395,7 @@ public class MediumOps {
 
     /**
      * Calculate the log10
+     * 
      * @param x
      * @return double
      */
@@ -418,7 +437,8 @@ public class MediumOps {
     }
 
     /**
-     * Calculate the n-Root 
+     * Calculate the n-Root
+     * 
      * @param num1
      * @param num2
      * @return double
